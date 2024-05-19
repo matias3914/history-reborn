@@ -1,0 +1,84 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - History Reborn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+    <div class="container">
+        <header>
+            <div class="title-container">
+                <img src="https://media.tenor.com/6i9McK4IJAMAAAAi/ramon-dino-se-quiser-sim-mano.gif"
+                    alt="Logo Mini" class="mini-logo">
+                <h1>Desenvolvido por: Matias Jr</h1>
+            </div>
+            <div class="social-icons">
+                <a href="https://discord.gg/NDKSmvYbHv" target="_blank" class="social-link discord"><i class="fab fa-discord"></i>
+                    Discord</a>
+                <a href="https://www.youtube.com/c/tiosniper" target="_blank" class="social-link youtube"><i class="fab fa-youtube"></i>
+                    YouTube</a>
+                <a href="https://www.twitch.tv/tiosniper_" target="_blank" class="social-link twitch"><i class="fab fa-twitch"></i>
+                    Twitch</a>
+            </div>
+        </header>
+        <main>
+            <div class="warning">
+                <i class="fas fa-times"></i> Este website foi feito para ajudar as pessoas que perdem o horário dos
+                eventos dentro do History
+            </div>
+            <h2 class="centered">Selecione o Tipo de Evento</h2>
+            <div class="event-type">
+                <button class="event-type-button active" data-type="history-stage">History Stage</button>
+                <button class="event-type-button" data-type="world-boss">World Boss</button>
+            </div>
+
+            <h2 class="centered">Selecione o Evento</h2>
+            <div class="event-list history-stage">
+                <div class="event" data-time="12:00" data-days="0,1,2,3,4,5,6">
+                    <img src="https://i.pinimg.com/originals/ca/89/99/ca89998638fa23fa0070fc4f472a4665.png"
+                        alt="Evento às 12:00">
+                    <p>Evento às 12:00</p>
+                </div>
+                <div class="event" data-time="16:00" data-days="0,1,2,3,4,5,6">
+                    <img src="https://browiki.org/images/b/b2/Arte_Arqueiros.png" alt="Evento às 16:00">
+                    <p>Evento às 16:00</p>
+                </div>
+                <div class="event" data-time="20:00" data-days="0,1,2,3,4,5,6">
+                    <img src="https://cdn.donmai.us/original/5c/b5/5cb581473b67896c2015acb592bbb3df.png"
+                        alt="Evento às 20:00">
+                    <p>Evento às 20:00</p>
+                </div>
+                <div class="event" data-time="00:00" data-days="0,1,2,3,4,5,6">
+                    <img src="https://browiki.org/images/thumb/c/ce/Arte2_Cavaleiros_R%C3%BAnicos.png/320px-Arte2_Cavaleiros_R%C3%BAnicos.png"
+                        alt="Evento às 00:00">
+                    <p>Evento às 00:00</p>
+                </div>
+            </div>
+            <div class="event-list world-boss hidden">
+                <div class="event" data-time="19:40" data-days="2,5">
+                    <img src="https://cdn.donmai.us/original/93/c9/93c99d9d58cdc7f3288512e8c150d1f9.png"
+                        alt="World Boss às 19:40">
+                    <p>World Boss às 19:40</p>
+                </div>
+                <div class="event" data-time="22:30" data-days="2,5">
+                    <img src="https://browiki.org/images/3/35/Arte_Oboro.png" alt="World Boss às 22:30">
+                    <p>World Boss às 22:30</p>
+                </div>
+            </div>
+            <button id="notifyButton" disabled>Ativar Notificação</button>
+
+            <div id="countdown" class="hidden">
+                <h2>Tempo até o próximo evento:</h2>
+                <p id="timer"></p>
+            </div>
+        </main>
+    <button id="testSoundButton">Testar Toque de Notificação</button>
+    <audio id="alertAudio" src="alert.mp3"></audio> <!-- Mantendo o áudio aqui -->
+    <script src="script.js"></script>
+</body>
+
+</html>
